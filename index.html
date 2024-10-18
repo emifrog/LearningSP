@@ -34,6 +34,36 @@
       <!-- Mobile view nav wrap -->
       <div class="ms-auto d-flex align-items-center order-lg-3">
         <div class="d-flex gap-2 align-items-center">
+          <div class="dropdown">
+            <button class="btn btn-outline-secondary btn-icon rounded-circle d-flex align-items-center"
+              type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+              <i class="bi theme-icon-active"></i>
+              <span class="visually-hidden bs-theme-text">Toggle theme</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bs-theme-text" data-bs-theme="dark">
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                  aria-pressed="false">
+                  <i class="bi theme-icon bi-sun-fill"></i>
+                  <span class="ms-2">Light</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                  aria-pressed="false">
+                  <i class="bi theme-icon bi-moon-stars-fill"></i>
+                  <span class="ms-2">Dark</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active"
+                  data-bs-theme-value="auto" aria-pressed="true">
+                  <i class="bi theme-icon bi-circle-half"></i>
+                  <span class="ms-2">Auto</span>
+                </button>
+              </li>
+            </ul>
+          </div>
           <!--<a href="#langaugeModal" class="text-inherit me-2" data-bs-toggle="modal">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
               class="bi bi-globe text-gray-500" viewbox="0 0 16 16">
@@ -2696,7 +2726,7 @@
             <p class="mb-0">Nascetur nibh feugiat vulputate urna mauris tincidunt porttitor ultricies. Et dis augue
               praesent congue.</p>
             <div class="d-flex gap-2">
-              <a href="#langaugeModal" class="btn btn-outline-secondary" data-bs-toggle="modal">
+              <!--<a href="#langaugeModal" class="btn btn-outline-secondary" data-bs-toggle="modal">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
                     viewbox="0 0 16 16">
@@ -2706,7 +2736,7 @@
                   </svg>
                 </span>
                 <span class="ms-2">English</span>
-              </a>
+              </a>-->
               <div class="dropdown">
                 <button class="btn btn-outline-secondary btn-icon rounded-circle d-flex align-items-center"
                   type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
